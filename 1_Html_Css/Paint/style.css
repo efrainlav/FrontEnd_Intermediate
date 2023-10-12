@@ -1,0 +1,84 @@
+/* CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --mi-padding: 5px 10px;
+    --grid-gap: 1px;
+  }
+  
+  .contenedor {
+    background-color: #e7e5e5;
+    width: 100vw;
+    height: 100vh;
+    
+    /* Configuración del Grid */
+    display: grid;
+    grid-template: 30px 30px auto 50px / 1fr 1fr 1fr 1fr ;
+    grid-template-areas:
+      "header header header header"
+      "barra barra barra barra"
+      "canvas canvas canvas canvas"
+      "footer footer footer footer";
+    gap: var(--grid-gap);
+  
+
+  }
+
+  header {
+    background-color: #F3F3F3;
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: #A5A5A5;
+  }
+
+  .barra {
+    grid-area: barra;
+    display: flex;
+    justify-content: space-between;
+    background-color: #F3F3F3;
+    padding: 10px;
+    align-items: center;
+    text-decoration: none;
+}
+
+.barra a {
+    text-decoration: none;
+    color: rgb(83, 83, 83);
+}
+
+.opciones-izquierda ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    place-content: center;
+}
+
+.opciones-izquierda ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+
+footer {
+    background-color: #fff7b3;
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+
+    place-content: center;
+    text-decoration: none;
+    color: rgb(83, 83, 83);
+  }
+
+footer a {
+    text-decoration: none;
+    color: rgb(83, 83, 83);
+}
