@@ -23,10 +23,8 @@
       "header header header header"
       "barra barra barra barra"
       "canvas canvas canvas canvas"
-      "footer footer footer footer";
+      "footeri footeri footerd footerd";
     gap: var(--grid-gap);
-  
-
   }
 
   header {
@@ -66,6 +64,26 @@
     margin-right: 20px;
 }
 
+.logo img
+{
+  width: 1rem;
+ 
+height: 1rem;
+
+}
+
+.barra .opciones-izquierda .fa-floppy-disk{
+  color: rgb(116, 116, 116);
+}
+
+.barra .opciones-izquierda .ms-redo{
+  color: red;
+}
+
+.barra .opciones-izquierda .ms-undo{
+  color: red;
+  transform: rotate(45deg);
+}
 
 footer {
     background-color: #fff7b3;
